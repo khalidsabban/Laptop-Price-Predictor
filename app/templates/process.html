@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Laptop price</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css')}}">
+    </head>
+
+    <body>
+        <h1>Laptop Price Prediction</h1>
+
+        <div class="nav-bar">
+            <ul>
+                <li><a href="{{ url_for('home')}}" >Model</a></li>
+                <li><a href="{{ url_for('process') }}">Processing</a></li>
+            </ul>
+        </div>
+    
+        <div class="dataset">
+            <h3>About Dataset</h3>
+            <p><span>Company (str)</span> - <strong>Laptop Manufacturer</strong></p>
+            <p><span>Product (str)</span> - <strong>Brand and Model</strong></p>
+            <p><span>TypeName (str)</span> - <strong>Laptop type</strong></p>
+            <p><span>Inches (int)</span> - <strong>Screen Size</strong></p>
+            <p><span>ScreenResolution (str)</span> - <strong>Screen Resolution</strong></p>
+            <p><span>Cpu (str)</span> - <strong>Central Processing Unit</strong></p>
+            <p><span>Ram (str)</span> - <strong>Laptop RAM</strong></p>
+            <p><span>Memory (str)</span> - <strong>Hard Disk & SSD</strong></p>
+            <p><span>GPU (str)</span> - <strong>Graphics Processing Units</strong></p>
+            <p><span>OpSys (str)</span> - <strong>Operating System</strong></p>
+            <p><span>Weight (str)</span> - <strong>Laptop Weight</strong></p>
+            <p><span>Price_euros (int)</span> - <strong>Target</strong></p>
+        </div>
+        
+        <br>
+
+        <div class="container">
+            <p>Dataset before processing:
+                <a href="www.google.com" target="_blank">Notebook</a>
+            </p>
+            <image src="{{ url_for('static', filename='images/data_before_processing.png')}}">
+            <br>
+            <p>Dataset after processing:
+                <a href="https://github.com/khalidsbn/laptop-price-prediction/blob/main/notebooks/02.%20Prepare%20data.ipynb" target="_blank">Notebook</a>
+            </p>
+            <img decoding="async" src="static/images/data_after_processing.png">
+        </div>
+
+        <br><br>
+
+    </body>
+</html>

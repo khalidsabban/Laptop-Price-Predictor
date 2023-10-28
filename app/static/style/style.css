@@ -1,0 +1,181 @@
+body {
+    font-family: 'Arimo', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.login {
+    width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #000;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.nav-bar {
+    margin-top: 20px;
+}
+
+ul {
+    margin-right: 50px;
+    text-align: center
+}
+
+ul li {
+    display: inline;
+    margin: 30px;
+    font-size: 30px;
+    color: #404040;
+}
+
+li a {
+    text-decoration: none;
+    color: #404040;
+}
+
+li a:hover {
+    border-bottom: 2px solid #404040;
+}
+
+li a:focus {
+    border-bottom: 2px solid #404040;
+}
+
+
+p {
+    text-align: left; 
+    font-family: Georgia, serif;
+
+}
+
+.input-group p {
+    margin: 10px 0;
+}
+
+.input-group select, .input-group input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4259f1;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #4259f1;
+}
+
+.prediction {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Processing style */
+
+
+/* Style for the container */
+.container {
+    width: 900px;
+    height: auto; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #000;
+}
+
+/* Style for the links */
+.container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the images */
+.container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+/* ----------- */
+
+/* Style for the dataset container */
+.dataset {
+    background-color: #f8f9fa;
+    /*border: 1px solid #ced4da;*/
+    padding: 20px;
+    width: 900px;
+    height: auto; 
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #000;
+}
+
+/* Style for the heading */
+.dataset h3 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style for the dataset items */
+.dataset p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #495057;
+}
+
+/* Style for specific data types */
+.dataset p strong {
+    color: #343a40;
+}
+
+/* Style for the dataset items' values (assuming they are in <strong> tags) */
+.dataset p strong {
+    font-weight: normal;
+    color: #28a745;
+}
+
+/* Style for the dataset items' keys (assuming they are in <span> tags) */
+.dataset p span {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+/* Hover effect */
+.dataset:hover {
+    background-color: #e2e6ea;
+}
+
+
+
+
+
+
+
+
