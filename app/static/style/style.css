@@ -124,6 +124,7 @@ p {
 /* ----------- */
 
 /* Style for the dataset container */
+.introduction,
 .dataset {
     background-color: #f8f9fa;
     /*border: 1px solid #ced4da;*/
@@ -137,6 +138,8 @@ p {
 }
 
 /* Style for the heading */
+.container h3,
+.introduction h3,
 .dataset h3 {
     color: #007bff;
     font-size: 24px;
@@ -165,6 +168,24 @@ p {
 .dataset p span {
     font-weight: bold;
     color: #6c757d;
+}
+
+/* tools used to achieve this project: */
+/* inside introduction dive class */
+.stack-item {
+    background: transparent;
+    height: 80px;
+    width: 100px;
+    margin: 30px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.stack-item img {
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 
