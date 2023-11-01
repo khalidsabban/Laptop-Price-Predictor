@@ -1,4 +1,6 @@
-# Laptop Price Predictor
+<div align="center">
+    <h1>Laptop Price Predictor</h1>
+</div>
 
 ## A Machine Learning model deployed with a user interface to predict the price of laptops
 
@@ -57,14 +59,13 @@ Running the above command should result in you seeing the following:
 
 This is the laptop price predictor; the app I'm making:
 
-6. Try to enter the information about your laltopl and get the prediction.
+6. Try to enter the information about your laptop and get its value in euro.
 
 <img src="./app/static/images/enter_features.png" width="800"/>
 
 7. You can also take a quick view of how the project was done in the `Processing` section, or go the the project's repo by clicking on `GitHub Repo`.
 
 <img src="./app/static/images/infor_about_project.png" width="800"/>
-
 
 
 ### Known issues
