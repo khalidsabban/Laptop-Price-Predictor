@@ -1,121 +1,228 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Laptop price</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css')}}">
-    </head>
-
-    <body>
-        <h1>Laptop Price Prediction</h1>
-
-        <div class="nav-bar">
-            <ul>
-                <li><a href="{{ url_for('home')}}" >Model</a></li>
-                <li><a href="{{ url_for('process') }}">Processing</a></li>
-                <li><a href="https://github.com/khalidsbn/Laptop-Price-Predictor" target="_blank">GitHub Repo</a></li>
-            </ul>
-        </div>
-
-        <div class="introduction">
-            <h3>Introduction</h3>
-            <p>
-                This project aims to use a dataset about laptops to build a model that predicts their prices.
-            </p>
-
-            <h3>Tools</h3>
-            <p>Tools used to achieve this project are:</p>
-            <div class="stack-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
-                    alt="python-logo">
-                <p>Python</p>
-            </div>
-
-            <div class="stack-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg" alt="pandas-logo">
-                <p>Pandas</p>
-            </div>
-
-            <div class="stack-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/NumPy_logo.svg" alt="numpy-logo">
-                <p>NumPy</p>
-            </div>
-
-            <div class="stack-item">
-                <img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" alt="seaborn-logo">
-                <p>Seaborn</p>
-            </div>
-
-            <div class="stack-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="matplotlib_logo">
-                <p>Matplotlib</p>
-            </div>
-
-            <div class="stack-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit-learn-logo">
-                <p>Scikit-Learn</p>
-            </div>
-
-            <div class="stack-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg" alt="flask-logo">
-                <p>Flask</p>
-            </div>
-
-            <div class="stack-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="jupyter-logo">
-                <p>Jupyter</p>
-            </div>
-
-            <div class="stack-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="vscode-logo">
-                <p>VsCode</p>
-            </div>
-
-            <div class="stack-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="github-logo">
-                <p>GitHub</p>
-            </div>
-
-            <div class="stack-item">
-                <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="git-logo">
-                <p>Git</p>
-            </div>
-        </div>
-
-        <br>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Processing - Laptop Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-animation"></div>
     
-        <div class="dataset">
-            <h3>Dataset's Features</h3>
-            <p><span>Company (str)</span> - <strong>Laptop Manufacturer</strong></p>
-            <p><span>Product (str)</span> - <strong>Brand and Model</strong></p>
-            <p><span>TypeName (str)</span> - <strong>Laptop type</strong></p>
-            <p><span>Inches (int)</span> - <strong>Screen Size</strong></p>
-            <p><span>ScreenResolution (str)</span> - <strong>Screen Resolution</strong></p>
-            <p><span>Cpu (str)</span> - <strong>Central Processing Unit</strong></p>
-            <p><span>Ram (str)</span> - <strong>Laptop RAM</strong></p>
-            <p><span>Memory (str)</span> - <strong>Hard Disk & SSD</strong></p>
-            <p><span>GPU (str)</span> - <strong>Graphics Processing Units</strong></p>
-            <p><span>OpSys (str)</span> - <strong>Operating System</strong></p>
-            <p><span>Weight (str)</span> - <strong>Laptop Weight</strong></p>
-            <p><span>Price_euros (int)</span> - <strong>Target</strong></p>
+    <div class="container">
+        <header>
+            <h1>💻 Laptop Price Predictor</h1>
+            <p class="subtitle">Data Processing & Model Information</p>
+        </header>
+
+        <nav>
+            <a href="{{ url_for('home')}}">🎯 Predictor</a>
+            <a href="{{ url_for('process')}}">📊 Processing</a>
+            <a href="https://github.com/khalidsbn/Laptop-Price-Predictor" target="_blank">🔗 GitHub</a>
+        </nav>
+
+        <div class="process-content">
+            <!-- Introduction Section -->
+            <div class="process-card">
+                <h2><span class="icon">📖</span> Introduction</h2>
+                <p>
+                    This project aims to use a dataset about laptops to build a machine learning model that accurately predicts their prices based on various specifications and features.
+                </p>
+            </div>
+
+            <!-- Tools Section -->
+            <div class="process-card">
+                <h2><span class="icon">🛠️</span> Tools & Technologies</h2>
+                <p class="section-subtitle">Technologies used to achieve this project:</p>
+                
+                <div class="tools-grid">
+                    <div class="tool-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python">
+                        <span>Python</span>
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg" alt="Pandas">
+                        <span>Pandas</span>
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/NumPy_logo.svg" alt="NumPy">
+                        <span>NumPy</span>
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" alt="Seaborn">
+                        <span>Seaborn</span>
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib">
+                        <span>Matplotlib</span>
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-Learn">
+                        <span>Scikit-Learn</span>
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg" alt="Flask">
+                        <span>Flask</span>
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Jupyter">
+                        <span>Jupyter</span>
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VS Code">
+                        <span>VS Code</span>
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+                        <span>GitHub</span>
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git">
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dataset Features -->
+            <div class="process-card">
+                <h2><span class="icon">📋</span> Dataset Features</h2>
+                <p class="section-subtitle">Key attributes used in the prediction model:</p>
+                
+                <div class="features-list">
+                    <div class="feature-row">
+                        <span class="feature-name">Company</span>
+                        <span class="feature-type">String</span>
+                        <span class="feature-desc">Laptop Manufacturer</span>
+                    </div>
+                    <div class="feature-row">
+                        <span class="feature-name">Product</span>
+                        <span class="feature-type">String</span>
+                        <span class="feature-desc">Brand and Model</span>
+                    </div>
+                    <div class="feature-row">
+                        <span class="feature-name">TypeName</span>
+                        <span class="feature-type">String</span>
+                        <span class="feature-desc">Laptop Type</span>
+                    </div>
+                    <div class="feature-row">
+                        <span class="feature-name">Inches</span>
+                        <span class="feature-type">Float</span>
+                        <span class="feature-desc">Screen Size</span>
+                    </div>
+                    <div class="feature-row">
+                        <span class="feature-name">ScreenResolution</span>
+                        <span class="feature-type">String</span>
+                        <span class="feature-desc">Screen Resolution</span>
+                    </div>
+                    <div class="feature-row">
+                        <span class="feature-name">CPU</span>
+                        <span class="feature-type">String</span>
+                        <span class="feature-desc">Central Processing Unit</span>
+                    </div>
+                    <div class="feature-row">
+                        <span class="feature-name">RAM</span>
+                        <span class="feature-type">String</span>
+                        <span class="feature-desc">Laptop RAM</span>
+                    </div>
+                    <div class="feature-row">
+                        <span class="feature-name">Memory</span>
+                        <span class="feature-type">String</span>
+                        <span class="feature-desc">Hard Disk & SSD</span>
+                    </div>
+                    <div class="feature-row">
+                        <span class="feature-name">GPU</span>
+                        <span class="feature-type">String</span>
+                        <span class="feature-desc">Graphics Processing Unit</span>
+                    </div>
+                    <div class="feature-row">
+                        <span class="feature-name">OpSys</span>
+                        <span class="feature-type">String</span>
+                        <span class="feature-desc">Operating System</span>
+                    </div>
+                    <div class="feature-row">
+                        <span class="feature-name">Weight</span>
+                        <span class="feature-type">String</span>
+                        <span class="feature-desc">Laptop Weight</span>
+                    </div>
+                    <div class="feature-row">
+                        <span class="feature-name">Price_euros</span>
+                        <span class="feature-type">Integer</span>
+                        <span class="feature-desc">Target Variable</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dataset Before and After -->
+            <div class="process-card">
+                <h2><span class="icon">🔄</span> Dataset Transformation</h2>
+                
+                <div class="dataset-section">
+                    <h3>📥 Before Processing</h3>
+                    <p>Raw dataset: <a href="https://github.com/khalidsbn/Laptop-Price-Predictor/blob/main/app/data/laptop_price.csv" target="_blank">View on GitHub</a></p>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='images/data_before_processing.png')}}" alt="Dataset before processing">
+                    </div>
+                </div>
+
+                <div class="transformation-arrow">
+                    <span>⬇️</span>
+                    <p>Data Cleaning & Feature Engineering</p>
+                </div>
+
+                <div class="dataset-section">
+                    <h3>📤 After Processing</h3>
+                    <p>Processed notebook: <a href="https://github.com/khalidsbn/Laptop-Price-Predictor/blob/main/notebooks/01_Prepare_data.ipynb" target="_blank">View on GitHub</a></p>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='images/data_after_processing.png')}}" alt="Dataset after processing">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Processing Steps -->
+            <div class="process-card">
+                <h2><span class="icon">⚙️</span> Processing Pipeline</h2>
+                <div class="pipeline-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Data Collection</h4>
+                            <p>Gathered comprehensive laptop specifications from various sources</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Data Cleaning</h4>
+                            <p>Removed duplicates, handled missing values, and standardized formats</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Feature Engineering</h4>
+                            <p>Extracted meaningful features from raw specifications</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Model Training</h4>
+                            <p>Trained multiple ML algorithms and selected the best performer</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>Model Evaluation</h4>
+                            <p>Validated model performance using cross-validation techniques</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <br>
+    </div>
 
-        <div class="container">
-            <h3>Dataset before and after</h3>
-            <p>Before processing:
-                <a href="https://github.com/khalidsbn/Laptop-Price-Predictor/blob/main/app/data/laptop_price.csv" target="_blank">Link</a>
-            </p>
-            <image src="{{ url_for('static', filename='images/data_before_processing.png')}}">
-            <br>
-            <p>After processing:
-                <a href="https://github.com/khalidsbn/Laptop-Price-Predictor/blob/main/notebooks/01_Prepare_data.ipynb" target="_blank">Notebook</a>
-            </p>
-            <img decoding="async" src="static/images/data_after_processing.png">
-        </div>
-
-        <br><br>
-
-    </body>
+    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+</body>
 </html>
