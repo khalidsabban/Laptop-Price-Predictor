@@ -4,7 +4,7 @@
 
 ## A Machine Learning model deployed with a user interface to predict the price of laptops accurately and efficiently.
 
-**Achieved 95% prediction accuracy** by implementing an optimized XGBoost regression model on 1,300+ laptop specifications, processing 15+ feature variables using Python (Pandas, Scikit-learn) to deliver real-time price estimates within a €52 Mean Absolute Error (MAE) margin of actual market values. Deployed via a production-ready Flask web application capable of handling 100+ concurrent user sessions with **sub-second (<100ms) response times**.
+**Achieved 95% prediction accuracy** by implementing an optimised XGBoost regression model on 1,300+ laptop specifications, processing 15+ feature variables using Python (Pandas, Scikit-learn) to deliver real-time price estimates within a €52 Mean Absolute Error (MAE) margin of actual market values. Deployed via a production-ready Flask web application capable of handling 100+ concurrent user sessions with **sub-second (<100ms) response times**.
 
 ### Introduction & Problem Solved
 This project delivers a comprehensive machine learning solution designed to address price uncertainty in the new and used laptop market. It analyzes laptop datasets containing fifteen distinct features—from company name and CPU specifications to screen resolution and operating system. The model processes these inputs through an optimized XGBoost pipeline to accurately predict laptop prices in euros.
@@ -24,17 +24,17 @@ This project delivers a comprehensive machine learning solution designed to addr
 * **notebooks**: Jupyter notebooks documenting the complete ML pipeline:
     * `laptop_price.ipynb`: Initial exploratory data analysis (EDA) revealing dataset characteristics, price distributions, and feature correlations—established baseline metrics and identified data quality issues.
     * `prepare_data.ipynb`: Data cleaning and feature engineering pipeline processing 1,300+ entries—handled missing values, extracted CPU/GPU specs, standardized categorical encoding using Scikit-learn, and created engineered features.
-    * `data_analysis.ipynb`: Post-processing analysis with visualizations—feature importance ranking, model performance metrics (R², RMSE, MAE), and insights on price determinants.
+    * `data_analysis.ipynb`: Post-processing analysis with visualisations—feature importance ranking, model performance metrics (R², RMSE, MAE), and insights on price determinants.
 * **app**: Production deployment directory containing:
     * **data folder**: Raw dataset (`laptop_price.csv`) and processed dataset (`cleaned_data.csv`) ready for model training.
     * **static folder**:
         * `style/`: Modern CSS stylesheets.
         * `js/`: JavaScript for form validation and UI interactions.
-        * `images/`: UI assets and visualization charts.
+        * `images/`: UI assets and visualisation charts.
     * **templates folder**: HTML templates using Jinja2 (`index.html`, `process.html`).
     * **app.py**: Flask application entry point—handles routing, form processing via POST endpoint, model integration, and serves predictions.
-    * **functions.py**: Utility functions for data preprocessing, feature encoding, input validation.
-    * **model.py**: Model training script—loads cleaned data, performs 80/20 train-test split, trains XGBoost model with hyperparameter tuning (GridSearchCV), validates with 5-fold cross-validation, and serializes the final model using pickle.
+    * **functions.py**: Utility functions for data preprocessing, feature encoding, and input validation.
+    * **model.py**: Model training script—loads cleaned data, performs 80/20 train-test split, trains XGBoost model with hyperparameter tuning (GridSearchCV), validates with 5-fold cross-validation, and serialises the final model using pickle.
 
 ### Libraries
 * **pandas**: Data manipulation and CSV processing.
@@ -63,7 +63,7 @@ This project delivers a comprehensive machine learning solution designed to addr
 - **R² Score:** 0.95 (Indicates the model explains 95% of the price variance)
 - **RMSE:** €87.50 (Root Mean Squared Error)
 - **MAE:** €52.30 (Mean Absolute Error - average prediction error margin)
-- **Cross-validation Score (5-fold):** 0.93 (Demonstrates model generalization ability)
+- **Cross-validation Score (5-fold):** 0.93 (Demonstrates model generalisation ability)
 
 ## Getting the App Running Locally
 
@@ -115,20 +115,18 @@ This project delivers a comprehensive machine learning solution designed to addr
 
 Running the above command should result in you seeing the following:
 
-<img src="./app/static/images/prediction_interface.png" width="800"/>
+<img src="./app/static/images/infor_about_project.png" width="800"/>
 
 **Interface Highlights:**
 - Professional dark-themed design with gradient accents.
 - Two-column layout: Intuitive prediction form (left) and results panel (right).
-- Real-time key metrics display: 95% accuracy achieved, 1.2K+ models analyzed, 15 features processed.
+- Real-time key metrics display: 95% accuracy achieved, 1.2K+ models analysed, 15 features processed.
 - Modern aesthetic with animated background elements.
 - Fully responsive design adapting to mobile, tablet, and desktop screens.
 
 ---
 
 6.  **Enter your laptop specifications** to receive an instant price prediction in euros:
-
-<img src="./app/static/images/enter_features.png" width="800"/>
 
 **The form accepts 15 specifications:**
 - Company (19 brands supported: Apple, HP, Dell, etc.)
@@ -147,11 +145,11 @@ Running the above command should result in you seeing the following:
 
 7.  **Explore the data processing pipeline** details in the "Processing" section of the web app:
 
-<img src="./app/static/images/infor_about_project.png" width="800"/>
+<img src="./app/static/images/prediction_interface.png" width="800"/>
 
 **The Processing page details:**
 - Project introduction and objectives.
-- Full technology stack visualization (Python, Pandas, Scikit-Learn, Flask, etc.).
+- Full technology stack visualisation (Python, Pandas, Scikit-Learn, Flask, etc.).
 - Explanation of dataset features.
 - Visual comparison: Dataset before vs. after cleaning/engineering.
 - Overview of the 5-step ML pipeline: Data Collection → Cleaning → Feature Engineering → Model Training → Evaluation.
@@ -175,7 +173,7 @@ Input: Apple Ultrabook, 13.3", 16GB RAM, Intel i5 2.7GHz, 512GB SSD, macOS Outpu
 ### Project Achievements
 
 ✅ **Achieved 95% prediction accuracy (R²)** using an XGBoost model, validated against 1,300+ real laptop price points from 2017-2018 market data.
-✅ **Delivered sub-second predictions (<100ms)** via an optimized Flask API, ensuring production-level performance suitable for real-time applications.
+✅ **Delivered sub-second predictions (<100ms)** via an optimised Flask API, ensuring production-level performance suitable for real-time applications.
 ✅ **Developed a professional UI/UX** with a modern, responsive design (HTML/CSS/JS) featuring glassmorphism effects for enhanced user engagement.
 ✅ **Built a complete end-to-end ML pipeline**, encompassing data collection, automated cleaning/feature engineering (Pandas, Scikit-learn), model training (XGBoost), and deployment (Flask).
 ✅ **Provided comprehensive documentation** through detailed Jupyter notebooks, outlining the entire analysis, feature engineering, and model selection process.
@@ -188,21 +186,21 @@ Input: Apple Ultrabook, 13.3", 16GB RAM, Intel i5 2.7GHz, 512GB SSD, macOS Outpu
 **Machine Learning:**
 - **Enhanced model input quality** by engineering key features (CPU brand, type, speed) extracted from raw text using Python string processing.
 - **Implemented robust categorical encoding** using Scikit-learn's Label Encoding and One-Hot Encoding for optimal compatibility with XGBoost.
-- **Optimized model performance** through systematic hyperparameter tuning using GridSearchCV on the XGBoost regressor.
-- **Ensured model generalization** and reliability via 5-fold cross-validation during the training phase (0.93 average score).
+- **Optimised model performance** through systematic hyperparameter tuning using GridSearchCV on the XGBoost regressor.
+- **Ensured model generalisation** and reliability via 5-fold cross-validation during the training phase (0.93 average score).
 - **Identified key price drivers** through feature importance analysis (RAM, CPU, Storage contributing ~68% of importance).
 
 **Web Development:**
 - **Designed a RESTful API structure** within Flask, handling prediction requests via GET/POST endpoints.
-- **Utilized Jinja2 templating** for efficient server-side rendering of dynamic content (like prediction results).
+- **Utilised Jinja2 templating** for efficient server-side rendering of dynamic content (like prediction results).
 - **Implemented client-side validation** with JavaScript to provide immediate feedback and prevent invalid form submissions.
 - **Created a responsive layout** using CSS Grid/Flexbox, ensuring usability across various screen sizes.
 - **Enhanced user experience** with subtle JavaScript animations and interactive elements.
 - **Supported multi-user interaction** through Flask's session management capabilities, handling 100+ concurrent requests.
 
-**Performance Optimization:**
-- **Minimized model load time** by serializing the trained XGBoost model using pickle for fast deployment.
-- **Optimized memory usage** through efficient pandas DataFrame operations in the preprocessing pipeline.
+**Performance Optimisation:**
+- **Minimised model load time** by serialising the trained XGBoost model using pickle for fast deployment.
+- **Optimised memory usage** through efficient pandas DataFrame operations in the preprocessing pipeline.
 - **Reduced page load times (<1.5s)** by minifying CSS/JS assets.
 - **Maintained smooth UI performance (60fps)** using GPU-accelerated CSS animations.
 - **Scaled request handling** via Flask's built-in server (or integration with WSGI servers like Gunicorn), supporting 100+ concurrent users.
@@ -213,7 +211,7 @@ Input: Apple Ultrabook, 13.3", 16GB RAM, Intel i5 2.7GHz, 512GB SSD, macOS Outpu
 
 | Issue                      | Impact                                  | Status           | Workaround                                               |
 | :------------------------- | :-------------------------------------- | :--------------- | :------------------------------------------------------- |
-| Limited to Euro currency   | Predictions only provided in €          | Known Limitation | Use external exchange rate converter for other currencies. |
+| Limited to Euro currency   | Predictions only provided in €          | Known Limitation | Use an external exchange rate converter for other currencies. |
 | Dataset from 2017-2018     | Prices may not reflect current market   | Acknowledged     | Consider market inflation adjustment (e.g., 10-15%).     |
 | No dedicated GPU spec input | Gaming laptop predictions less precise | Planned (v2.0)   | Model infers GPU impact from "Gaming" type & price range. |
 | Weight input as text       | Potential for invalid numerical entries | Minor UX Issue   | Client-side JS validation restricts input range (0.69-4.7).|
