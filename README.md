@@ -141,11 +141,13 @@ Running the above command should result in you seeing the following:
 
 **Example prediction:** Gaming laptop with Intel i7, 16GB RAM, 512GB SSD → €1,450 (± €52 MAE)
 
+<img src="./app/static/images/prediction_interface.png" width="800"/>
+
 ---
 
 7.  **Explore the data processing pipeline** details in the "Processing" section of the web app:
 
-<img src="./app/static/images/prediction_interface.png" width="800"/>
+<img src="./app/static/images/processing_pipeline.png" width="800"/>
 
 **The Processing page details:**
 - Project introduction and objectives.
