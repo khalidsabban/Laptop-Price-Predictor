@@ -175,10 +175,15 @@ Input: Apple Ultrabook, 13.3", 16GB RAM, Intel i5 2.7GHz, 512GB SSD, macOS Outpu
 ### Project Achievements
 
 ✅ **Achieved 95% prediction accuracy (R²)** using an XGBoost model, validated against 1,300+ real laptop price points from 2017-2018 market data.
+
 ✅ **Delivered sub-second predictions (<100ms)** via an optimised Flask API, ensuring production-level performance suitable for real-time applications.
+
 ✅ **Developed a professional UI/UX** with a modern, responsive design (HTML/CSS/JS) featuring glassmorphism effects for enhanced user engagement.
+
 ✅ **Built a complete end-to-end ML pipeline**, encompassing data collection, automated cleaning/feature engineering (Pandas, Scikit-learn), model training (XGBoost), and deployment (Flask).
+
 ✅ **Provided comprehensive documentation** through detailed Jupyter notebooks, outlining the entire analysis, feature engineering, and model selection process.
+
 ✅ **Engineered production-ready code**, incorporating error handling, robust input validation (client-side JS & server-side Python), and optimized data preprocessing functions.
 
 ---
